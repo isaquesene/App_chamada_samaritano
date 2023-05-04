@@ -1,0 +1,1 @@
+<?php //conecxão com banco mysql
