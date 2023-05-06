@@ -29,6 +29,7 @@ $result = mysqli_query($sql, $select);
         <tr>
           <th>Data</th>
           <th>Nome</th>
+          <th>Idade</th>
           <th>Status</th>
         </tr>
       </thead>
@@ -39,6 +40,7 @@ $result = mysqli_query($sql, $select);
           <tr>
             <td data-label = "Data"><?php echo $row['data'] ?></td data-label = "">
             <td data-label = "Nome"><?php echo $row['nome'] ?></td data-label = "">
+            <td data-label = "Idade"><?php echo $row['idade'] ?></td data-label = "">
             <td data-label = "Status"><?php echo ($row['status'] == "Presente") ? '<b style="background-color: green; color: #fff; padding: 5px; border-radius: 5px;">Presente</b>' 
             : ($row['status'] == "Falta" ? '<b style="background-color: red; color: #fff; padding: 5px; border-radius: 5px;">Falta</b>' : '')?></td data-label = "">
           </tr>

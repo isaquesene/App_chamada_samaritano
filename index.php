@@ -24,6 +24,7 @@
     <form method="post" class="form">  
         <input type="date" name="data" id="data_hoje" class="texto">
         <input type="text" name="nome" class="texto">
+        <input type="number" name="idade" class="texto">
         <select name="status" class="texto">
             <option value="">Selecione...</option>
             <option value="Presente">Presente</option>
