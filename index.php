@@ -8,14 +8,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.scss">
     <title>Document</title>
 </head>
+
+<style>
+    body{
+        background: #fbb938;
+    }
+</style>
+
 <body>
     <!--Page--> 
-    <form method="post">  
-        <input type="date" name="data" id="data_hoje">
-        <input type="text" name="nome">
-        <select name="status">
+    <h3>App Chamadas</h3>
+    <form method="post" class="form">  
+        <input type="date" name="data" id="data_hoje" class="texto">
+        <input type="text" name="nome" class="texto">
+        <select name="status" class="texto">
             <option value="">Selecione...</option>
             <option value="Presente">Presente</option>
             <option value="Falta">Falta</option>

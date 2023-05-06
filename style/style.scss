@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+
+body {
+    width: 100%;
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+    font-family: 'jost';
+    
+  }
+  
+  h3 {
+    color: #fab939;
+    font-family: 'snell roundhand';
+    margin: 30px 0 30px 0;
+    font-size: 25px;
+  }
+  
+
+  .table-container {
+  padding: 0 10px;
+  margin: 40px auto 0;
+}
+
+  .table {
+    border-collapse: collapse;
+    font-size: 1em;
+    border-radius: 5px;
+    align-items: center;
+  }
+  .table tbody tr th {
+    background-color: #F8F8FF;
+    color: #ffffff;
+    font-weight: bold;
+    vertical-align: top;
+    padding: 20px;
+    letter-spacing: 0.35px;
+    border-radius: 5px;
+  }
+  
+  .table tbody tr td {
+    border-bottom: 1px solid #F8F8FF;
+    letter-spacing: 0.35px;
+    padding: 8px;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+  
+  .table tr {
+    border: 1px solid #F8F8FF;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.10);
+  }
+
+  .form{
+    background: white;
+    padding: 30px 30px;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    display: flex;
+    border-radius: 30px;
+    min-width: 500px;
+
+}
+
+button{
+
+    font-size: 12pt;
+    padding: 5px 10px;
+    margin: 0 3px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #20B2AA;
+    color: #F8F8FF;
+    cursor: pointer;
+    transition: all .4s;
+    gap: 5px;
+
+}
+
+a{
+    font-size: 12pt;
+    padding: 5px 10px;
+    margin: 0 3px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #e2a242;
+    color: #F8F8FF;
+    cursor: pointer;
+    transition: all .4s;
+    gap: 5px;
+    text-decoration: none;
+    
+
+}
+
+.controle-btn{
+    font-size: 12pt;
+    padding: 5px 10px;
+    margin: 0 3px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #20B2AA;
+    color: #F8F8FF;
+    cursor: pointer;
+    transition: all .4s;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.texto{
+
+    height: 25px;
+    margin: 0 3px;
+    width: 100% ;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 14px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+
+}
+
+h3{
+
+    font-size: 22pt;
+    color: rgb(80,80,80);
+    margin: 0 0;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .table thead {
+      display: none;
+    }
+  
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+      display: block;
+      width: 100%;
+    }
+  
+    .table tr {
+      margin-bottom: 15px;
+    }
+  
+    .table tbody tr td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    .table td::before {
+      content: attr(data-label);
+      color: #333;
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: 600;
+      font-size: 14px;
+      text-align: left;
+    }
+}
